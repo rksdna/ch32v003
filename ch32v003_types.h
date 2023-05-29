@@ -1,5 +1,5 @@
 /*
- * CH32V003 standard type definitions
+ * CH32V003 type definitions
  * Copyright (c) 2023 rksdna
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy

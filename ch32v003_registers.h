@@ -64,6 +64,8 @@ struct ch32v003_pfic
 #define	PFIC_KEY2 ((u32_t)0xBCAF0000)
 #define	PFIC_KEY3 ((u32_t)0xBEEF0000)
 
+#define PFIC_SCTRL_SYSRESET ((u32_t)0x80000000)
+
 struct ch32v003_stk
 {
     volatile u32_t CTLR;
@@ -82,7 +84,7 @@ struct ch32v003_stk
 #define STK_CTLR_STRE ((u32_t)0x00000008)
 #define STK_CTLR_SWIE ((u32_t)0x80000000)
 
-#define STK_SR_CNTIF ((u32_t)0x80000001)
+#define STK_SR_CNTIF ((u32_t)0x00000001)
 
 struct ch32v003_adc
 {

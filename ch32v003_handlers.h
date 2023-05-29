@@ -1,5 +1,5 @@
 /*
- * CH32V003 exception handlers
+ * CH32V003 interrupt handlers
  * Copyright (c) 2023 rksdna
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
