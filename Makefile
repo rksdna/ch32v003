@@ -44,7 +44,7 @@ LD = $(PREFIX)gcc
 OC = $(PREFIX)objcopy
 OD = $(PREFIX)objdump
 SZ = $(PREFIX)size
-BS = minichlink
+BS = wlink
 RM = rm -f
 
 FLAGS = -march=rv32ec -mabi=ilp32e -ffreestanding -nostdinc -nostdlib -nostartfiles
@@ -78,9 +78,9 @@ $(ELF): $(OBJ)
 	@ echo "Compiling $@..."
 	$(CC) -c $(CFLAGS) -o $@ $<
 
-install: $(BIN)
-	@echo "Installing $(BIN)..."
-	$(BS) -w $(BIN) flash -b
+install: $(HEX)
+	@echo "Installing $(HEX)..."
+	$(BS) flash $(HEX)
 
 clean:
 	@echo "Cleaning..."
